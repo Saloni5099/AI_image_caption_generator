@@ -1,0 +1,236 @@
+.image-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.image-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.image-container {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-filename {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #333;
+  word-break: break-word;
+}
+
+.caption-display {
+  margin-bottom: 15px;
+}
+
+.caption-text {
+  color: #666;
+  margin-bottom: 10px;
+  min-height: 40px;
+  line-height: 1.5;
+}
+
+.caption-text em {
+  color: #999;
+  font-style: italic;
+}
+
+.edit-button {
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.edit-button:hover {
+  background: #5568d3;
+}
+
+.caption-edit {
+  margin-bottom: 15px;
+}
+
+.caption-input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  resize: vertical;
+  margin-bottom: 10px;
+}
+
+.caption-input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.caption-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.save-button,
+.cancel-button {
+  padding: 6px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.save-button {
+  background: #28a745;
+  color: white;
+}
+
+.save-button:hover:not(:disabled) {
+  background: #218838;
+}
+
+.cancel-button {
+  background: #6c757d;
+  color: white;
+}
+
+.cancel-button:hover:not(:disabled) {
+  background: #5a6268;
+}
+
+.save-button:disabled,
+.cancel-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.labels-container {
+  margin-bottom: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.labels-container strong {
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.labels-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 8px;
+  border-left: 3px solid #667eea;
+}
+
+.label-name {
+  font-weight: 500;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.label-score {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  min-width: 45px;
+  text-align: center;
+}
+
+.tags-container {
+  margin-bottom: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.tags-container strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.card-actions {
+  margin-bottom: 10px;
+}
+
+.delete-button {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+  width: 100%;
+}
+
+.delete-button:hover:not(:disabled) {
+  background: #c82333;
+}
+
+.delete-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.card-meta {
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+  color: #999;
+  font-size: 0.85rem;
+}
+
